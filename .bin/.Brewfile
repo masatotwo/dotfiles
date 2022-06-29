@@ -5,7 +5,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 
-brew "rbrnv"
+brew "rbenv"
 brew "nodebrew"
 brew "zsh-completion"
 brew "git"

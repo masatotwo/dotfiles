@@ -6,10 +6,14 @@ if [ "$(uname)" != "Darwin" ] ; then
 fi
 
 # Install xcode
-xcode-select --install > /dev/null
+if ! type "xcode-select" > /dev/null; then
+  xcode-select --install > /dev/null
+fi
 
 # Install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null
+if ! type "brew" > /dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null
+fi
 
 # ~ の展開でハマった
 # @see https://note.com/skaneda/n/n2958ca235c29

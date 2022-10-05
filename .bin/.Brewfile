@@ -15,6 +15,7 @@ brew "mas"
 brew "tree"
 brew "watch"
 brew "wget"
+brew "docker-compose"
 
 cask "docker"
 cask "iterm2"

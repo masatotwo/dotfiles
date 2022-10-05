@@ -11,5 +11,5 @@ $ cd ~ && git clone https://github.com/masatotwo/dotfiles
 Set macOS.
 
 ```
-$ cd ~/dotfiles && make
+$ cd dotfiles && make
 ```

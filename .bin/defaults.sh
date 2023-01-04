@@ -56,6 +56,9 @@ defaults write com.apple.menuextra.clock DateFormat -string "M\u6708d\u65e5(EEE)
 # Display battery level in the menu bar
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
+# Disable the Character Accent Menu
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # for app in "Dock" \
 #   "Finder" \
 #   "SystemUIServer"; do

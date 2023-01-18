@@ -16,10 +16,12 @@ brew "tree"
 brew "watch"
 brew "wget"
 brew "docker-compose"
+brew "mysql"
 
 cask "docker"
 cask "iterm2"
 cask "google-chrome"
+cask "google-japanese-ime"
 cask "firefox"
 cask "notion"
 cask "visual-studio-code"
@@ -27,4 +29,8 @@ cask "font-hack-nerd-font"
 cask "slack"
 cask "zoom"
 cask "clipy"
-cask "google-japanese-ime"
+cask "mysqlworkbench"
+cask "postman"
+
+mas "Microsoft OneNote", id: 784801555
+mas "Keynote", id: 409183694

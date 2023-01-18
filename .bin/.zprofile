@@ -11,5 +11,7 @@ fi
 
 eval "$(rbenv init -)"
 
+PATH=$PATH:$HOME/.nodebrew/current/bin
+
 # ~/.homebrew/bin/のPATHを優先する。
 PATH="$HOME/.homebrew/bin:$PATH"

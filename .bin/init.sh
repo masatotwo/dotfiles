@@ -20,6 +20,9 @@ if [ ! -d ${HOME}/.homebrew/bin ] ; then
   # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Install Rosetta2
+softwareupdate --install-rosetta --agree-to-license
+
 # ~ の展開でハマった
 # @see https://note.com/skaneda/n/n2958ca235c29
 # Install oh-my-zsh

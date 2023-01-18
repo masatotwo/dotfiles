@@ -19,7 +19,6 @@ brew "docker-compose"
 brew "mysql"
 
 cask "docker"
-cask "iterm2"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "firefox"
@@ -30,7 +29,6 @@ cask "slack"
 cask "zoom"
 cask "clipy"
 cask "mysqlworkbench"
-cask "postman"
 
 mas "Microsoft OneNote", id: 784801555
 mas "Keynote", id: 409183694

@@ -2,7 +2,7 @@ arch -arm64 uname -m # Apple SiliconでないMacの場合、arm64アーキテク
 if [[ $? == 0 ]]; then
   # Apple Silicon
   echo "arm64"
-  eval "$(/opt/homebrew/bin/brew shellenv)"
+  eval "$($HOME/.homebrew/bin/brew shellenv)"
 else
   # Intel Mac
   echo "x86_64"
@@ -12,6 +12,3 @@ fi
 eval "$(rbenv init -)"
 
 PATH=$PATH:$HOME/.nodebrew/current/bin
-
-# ~/.homebrew/bin/のPATHを優先する。
-PATH="$HOME/.homebrew/bin:$PATH"

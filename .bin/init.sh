@@ -11,8 +11,13 @@ if ! type "xcode-select" > /dev/null; then
 fi
 
 # Install brew
-if ! type "brew" > /dev/null; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null
+# 複数ユーザで問題が起こらないよう、/usr/localではなく~/.homebrew/にhomebrewをインストールする。
+# https://qiita.com/rinchsan/items/de021e32fc3967741f67
+# https://tech.gootablog.com/article/homebrew-userhomedir/
+if [ ! -d ${HOME}/.homebrew/bin ] ; then
+  mkdir ${HOME}/.homebrew
+  curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C ${HOME}/.homebrew
+  # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # ~ の展開でハマった

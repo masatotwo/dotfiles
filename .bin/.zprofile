@@ -10,3 +10,6 @@ else
 fi
 
 eval "$(rbenv init -)"
+
+# ~/.homebrew/bin/のPATHを優先する。
+PATH="$HOME/.homebrew/bin:$PATH"

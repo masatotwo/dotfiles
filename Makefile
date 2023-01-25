@@ -15,4 +15,4 @@ defaults:
 
 # Install macOS applications.
 brew:
-	.bin/brew.sh
+	.bin/brew.sh $(env)

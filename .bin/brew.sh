@@ -7,4 +7,10 @@ fi
 
 export PATH="$HOME/.homebrew/bin:$PATH"
 
-brew bundle --global
+
+if [[ "$env" == "dev" ]] ; then
+	echo "env: $env"
+	brew bundle --file=~/.Brewfile.dev
+else
+	brew bundle --global
+fi

@@ -64,6 +64,9 @@
 !/.gitconfig_shared
 !/codex/
 !/codex/AGENTS.md
+!/antigravity/
+!/antigravity/**
+!/AGENTS.md
 
 !/README.md
 !/LICENSE

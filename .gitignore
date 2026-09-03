@@ -62,6 +62,8 @@
 !/.config/**
 !/.gitignore_global
 !/.gitconfig_shared
+!/codex/
+!/codex/AGENTS.md
 
 !/README.md
 !/LICENSE
